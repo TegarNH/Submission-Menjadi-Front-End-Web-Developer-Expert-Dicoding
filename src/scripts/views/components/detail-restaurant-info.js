@@ -14,9 +14,9 @@ class DetailRestautantInfo extends HTMLElement {
     const dataRestaurant = this._dataRestaurant;
     const categoriesRestaurant = this._categoriesRestaurant;
     this.innerHTML = `<section class="restaurant__detail">
-        <img class="restaurant__poster" src="${CONFIG.BASE_IMAGE_URL_SIZE_MEDIUM + dataRestaurant.pictureId}" alt="Restoran ${dataRestaurant.name}">
+        <img class="lazyload restaurant__poster" src="${CONFIG.BASE_IMAGE_URL_SIZE_MEDIUM + dataRestaurant.pictureId}" alt="Restoran ${dataRestaurant.name}">
         <div class="restaurant__info">
-          <h2 class="restaurant__title">${dataRestaurant.name}</h2>
+          <h2 class="restaurant__name">${dataRestaurant.name}</h2>
           <p>${categoriesRestaurant}</p>
           <p><span class="fa fa-star checked"></span>  ${dataRestaurant.rating}/5</p>
           <p><span class="material-icons" aria-hidden="true">location_on</span> ${dataRestaurant.address}, ${dataRestaurant.city}</p>

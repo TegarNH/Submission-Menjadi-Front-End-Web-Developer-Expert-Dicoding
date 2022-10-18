@@ -45,7 +45,7 @@ const Detail = {
     }
   },
 
-  _initialDetailPage(restaurant) {
+  async _initialDetailPage(restaurant) {
     DetailRestaurantInfoInitiator.init({
       dataRestaurant: restaurant,
       infoRestoElement: document.querySelector('detail-restaurant-info'),
@@ -62,7 +62,7 @@ const Detail = {
       reviewListElement: document.querySelector('.review-list'),
     });
 
-    FavoriteButtonInitiator.init({
+    await FavoriteButtonInitiator.init({
       restaurant: {
         id: restaurant.id,
         name: restaurant.name,

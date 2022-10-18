@@ -1,31 +1,18 @@
 import FavoriteRestaurantIdb from '../../data/favorite-restaurant-idb';
-import ExploreFavoriteRestaurantInitiator from '../../utils/initiators/explore-favorite-restaurant-initiator';
+import FavoriteRestaurantSearchView from './favorite/favorite-restaurant-search-view';
+import FavoriteRestaurantShowPresenter from './favorite/favorite-restaurant-show-presenter';
+import FavoriteRestaurantSearchPresenter from './favorite/favorite-restaurant-search-presenter';
+
+const view = new FavoriteRestaurantSearchView();
 
 const Favorite = {
   async render() {
-    return `
-      <section class="favorite">
-        <h2 class="label_section">Restoran Favoritmu</h2>
-        <div class="favorite-container"></div>
-      </section>
-    `;
+    return view.getTemplate();
   },
 
   async afterRender() {
-    try {
-      const restaurantsFavorite = await FavoriteRestaurantIdb.getAllRestaurants();
-
-      this._initContentFavoritePage(restaurantsFavorite);
-    } catch (error) {
-      console.log(error);
-    }
-  },
-
-  _initContentFavoritePage(restaurantsFavorite) {
-    ExploreFavoriteRestaurantInitiator.init({
-      restaurants: restaurantsFavorite,
-      listRestaurantContainer: document.querySelector('.favorite-container'),
-    });
+    new FavoriteRestaurantShowPresenter({ view, favoriteRestaurants: FavoriteRestaurantIdb });
+    new FavoriteRestaurantSearchPresenter({ view, favoriteRestaurants: FavoriteRestaurantIdb });
   },
 };
 

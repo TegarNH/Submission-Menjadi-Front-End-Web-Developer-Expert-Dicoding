@@ -20,18 +20,20 @@
       font-size: 16px;
     }
 
-    .review__profile {
+    picture {
       grid-area: profile-element;
-      width: 50px;
-      height: auto;
-      margin-right: 20px;
-
-      @include media-in(desktop) {
-        width: 65px;
-      } 
-
-      @include media-in(desktop-large) {
-        width: 75px;
+      .review__profile {
+        width: 50px;
+        height: auto;
+        margin-right: 20px;
+  
+        @include media-in(desktop) {
+          width: 65px;
+        } 
+  
+        @include media-in(desktop-large) {
+          width: 75px;
+        }
       }
     }
     

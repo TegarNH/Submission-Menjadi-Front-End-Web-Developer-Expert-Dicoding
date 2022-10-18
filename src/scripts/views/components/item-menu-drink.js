@@ -9,7 +9,11 @@ class ItemMenuDrink extends HTMLElement {
   _render() {
     const drink = this._drink;
     this.innerHTML = `<div class="item__menu_restaurant card">
-        <img class="picture__item" src="${CONFIG.IMAGE_DEFAULT_DRINK_URL}" alt="Minuman ${drink.name}">
+        <picture>
+          <source type="image/webp" srcset="${CONFIG.IMAGE_DEFAULT_DRINK_PATH}.webp">
+          <source type="image/png" srcset="${CONFIG.IMAGE_DEFAULT_DRINK_PATH}.png">
+          <img class="lazyload picture__item" src="${CONFIG.IMAGE_DEFAULT_DRINK_PATH}.png" alt="Minuman ${drink.name}">
+        </picture>
         <div class="name__item">
           <h3>${drink.name}</h3>
         </div>

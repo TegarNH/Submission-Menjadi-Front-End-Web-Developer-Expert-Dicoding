@@ -1,5 +1,5 @@
 import RestaurantAPIDicoding from '../../data/restaurant-api-source';
-import ExploreFavoriteRestaurantInitiator from '../../utils/initiators/explore-favorite-restaurant-initiator';
+import ExploreRestaurantInitiator from '../../utils/initiators/explore-restaurant-initiator';
 import RecommendedRestaurantInitiator from '../../utils/initiators/recommended-restaurant-initiator';
 
 const Home = {
@@ -30,7 +30,7 @@ const Home = {
   },
 
   _initContentHomePage(restaurants) {
-    ExploreFavoriteRestaurantInitiator.init({
+    ExploreRestaurantInitiator.init({
       restaurants,
       listRestaurantContainer: document.querySelector('.explore-container'),
     });

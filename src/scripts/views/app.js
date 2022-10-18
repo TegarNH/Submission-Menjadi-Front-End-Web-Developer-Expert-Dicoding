@@ -8,6 +8,7 @@ import './components/detail-restaurant-info';
 import './components/item-menu-drink';
 import './components/item-menu-food';
 import './components/item-review-resto';
+import './components/search-restaurant';
 import './components/favorite-button';
 
 class App {

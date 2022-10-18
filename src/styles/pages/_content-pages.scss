@@ -8,6 +8,9 @@
 @import 'detail/review-restaurant';
 @import 'detail/menu-restaurant';
 
+// Favorite Page
+@import 'favorite/search-favorite';
+
 
 .label_section {
   text-align: center;
@@ -43,7 +46,6 @@
   padding: 0 30px;
   display: grid;
   gap: 20px;
-
 
   @include media-in(tablet) {
     grid-template-columns: 1fr 1fr;

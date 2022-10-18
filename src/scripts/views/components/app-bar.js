@@ -1,3 +1,5 @@
+import CONFIG from '../../globals/config';
+
 class AppBar extends HTMLElement {
   connectedCallback() {
     this._render();
@@ -7,7 +9,11 @@ class AppBar extends HTMLElement {
     this.innerHTML = `
         <div class="brand_logo">
           <a href="index.html">
-            <img src="./images/brand-logo.png" alt="Find Foods">
+            <picture>
+              <source type="image/webp" srcset="${CONFIG.IMAGE_BRAND_LOGO_PATH}.webp">
+              <source type="image/png" srcset="${CONFIG.IMAGE_BRAND_LOGO_PATH}.png">
+              <img src="${CONFIG.IMAGE_BRAND_LOGO_PATH}.png" alt="Find Foods">
+            </picture>
           </a>
         </div>
       

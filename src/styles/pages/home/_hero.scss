@@ -1,40 +1,48 @@
 .hero {
+  width: 100%;
+  position: relative;
   height: 380px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/images/hero-image_2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  .hero_background {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(2px);
-  }
   
-  .hero_content {
-    text-align: center;
-    padding: 0 50px;
-    font-size: 15px;
+  img {
+    width: 100%;
+    perspective: 4px;
+    object-fit: cover;
+    height: 380px;
+    filter: blur(2px);
+  }
+
+  .content-container {
+    width: 100%;
+    height: 100%;
+    top: 0;
     color: white;
-    
-    h1, p {
-      margin-bottom: 15px;
-    }
+    position: absolute;
+    display: flex;
+    background-color: rgba(0,0,0,0.6);  
 
-    @include media-in(mobile) {
-      font-size: 16px;
-      padding: 0 100px;
-    }
-
-    @include media-in(tablet) {
-      font-size: 18px;
-    }
-
-    @include media-in(desktop) {
-      font-size: 20px;
+    .hero_content {
+      padding: 0 50px;
+      font-size: 15px;
+      color: white;
+      text-align: center;
+      margin: auto;
+      
+      h1, p {
+        margin-bottom: 15px;
+      }
+  
+      @include media-in(mobile) {
+        font-size: 16px;
+        padding: 0 100px;
+      }
+  
+      @include media-in(tablet) {
+        font-size: 18px;
+      }
+  
+      @include media-in(desktop) {
+        font-size: 20px;
+      }
     }
   }
 }

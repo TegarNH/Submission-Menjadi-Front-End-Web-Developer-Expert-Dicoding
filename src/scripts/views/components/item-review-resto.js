@@ -9,7 +9,11 @@ class ItemReviewResto extends HTMLElement {
   _render() {
     const dataReview = this._dataReview;
     this.innerHTML = `<div class="review-item card">
-        <img src="${CONFIG.IMAGE_DEFAULT_PERSON_REVIEW_URL}" alt="Profil ${dataReview.name}" class="review__profile">
+        <picture>
+          <source type="image/webp" srcset="${CONFIG.IMAGE_DEFAULT_PERSON_REVIEW_PATH}.webp">
+          <source type="image/png" srcset="${CONFIG.IMAGE_DEFAULT_PERSON_REVIEW_PATH}.png">
+          <img src="${CONFIG.IMAGE_DEFAULT_PERSON_REVIEW_PATH}.png" alt="Profil ${dataReview.name}" class="lazyload review__profile">
+        </picture>
         <h3 class="review__name">${dataReview.name}</h3>
         <p class="review__content"><i>"${dataReview.review}"</i></p>
         <p class="review__date">Diposting pada ${dataReview.date}</p>

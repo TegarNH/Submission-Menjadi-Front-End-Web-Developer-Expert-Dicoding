@@ -1,0 +1,93 @@
+
+.search-container {
+  background-color: white;
+  max-width: 1050px;
+  padding: 20px;
+  margin: 30px;
+
+  @include media-in(desktop) {
+    margin: 30px auto;
+  }
+
+  .name-search {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+    @include media-in(tablet) {
+      font-size: 26px;
+    }
+  }
+
+  search-restaurant {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+
+    @include media-in(tablet) {
+      grid-template-columns: 3fr 1fr;
+    }
+    
+    @include media-in(desktop) {
+      grid-template-columns: 4fr 1fr;
+    }
+
+    .textbox {
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid rgb(158, 158, 158);
+      border-radius: 4px;
+
+      @include media-in(mobile) {
+        font-size: 18px;
+      }
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 16px;
+      color: black;
+      background-color: var(--primary);
+      transition: 0.3s;
+  
+      &:hover {
+        cursor: pointer;
+        background-color: var(--primarySemiDark);
+      }
+  
+      &:active {
+        background-color: var(--PrimaryDark);
+      }
+  
+      &:focus {
+        background-color: var(--primarySemiDark);
+      }
+  
+      @include media-in(mobile) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.restaurant-item-not-found {
+  padding-top: 15px;
+  font-size: 16px;
+  font-style: italic;
+  grid-template-columns: 1fr;
+
+  @include media-in(tablet) {
+    font-size: 17px;
+  }
+  
+  @include media-in(desktop) {
+    font-size: 20px;
+  }
+
+  @include media-in(desktop-large) {
+    font-size: 22px;
+  }
+}
