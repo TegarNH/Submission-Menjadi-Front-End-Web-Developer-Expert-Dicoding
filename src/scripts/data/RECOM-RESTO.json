@@ -1,0 +1,44 @@
+{
+  "recom-restaurants": [
+    {
+      "id": "abjklhfeb24b22",
+      "name": "Mamifokobo Café & Kitchen",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
+      "pictureId": "https://kulinerkota.com/wp-content/uploads/2021/12/farra.diba_118498292_936627816833656_2674730458190727077_n-1024x718.jpg",
+      "city": "Bogor",
+      "rating": 4.5
+    },
+    {
+      "id": "ka3r7wi32bd273",
+      "name": "Skyline Best View Resto",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
+      "pictureId": "https://b.zmtcdn.com/data/pictures/4/18590854/298a02c473bc4ca42ad0bd77d28040b9.jpg",
+      "city": "Bandung",
+      "rating": 4.5
+    },
+    {
+      "id": "hdasewjo1b8832",
+      "name": "Henshin Restaurant",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
+      "pictureId": "https://www.henshinjakarta.com/resourcefiles/home-second-snippet/henshin-bar-outdoor.jpg",
+      "city": "Jakarta",
+      "rating": 4.8
+    },
+    {
+      "id": "hwadjkd21ohd71",
+      "name": "Resto Eling Bening",
+      "description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.",
+      "pictureId": "https://1.bp.blogspot.com/-BXspmyu9ULM/XSNkvbUU_zI/AAAAAAAABV4/5kStLXMsSBUOC02Y8FADGNVzbwy1kQcyQCLcBGAs/s1600/Restoran-Eling-Bening.jpg",
+      "city": "Ambarawa",
+      "rating": 4.4
+    },
+    {
+      "id": "ka28nd83bdbawu",
+      "name": "Nanamia Pizzeria",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.",
+      "pictureId": "https://www.pegipegi.com/travel/wp-content/uploads/2020/02/nanamia4.jpg",
+      "city": "Yogyakarta",
+      "rating": 4.7
+    }
+  ]
+}
