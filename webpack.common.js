@@ -2,7 +2,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -18,9 +17,9 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          "style-loader",
-          "css-loader",
-          "sass-loader",
+          'style-loader',
+          'css-loader',
+          'sass-loader',
         ],
       },
       {
@@ -50,6 +49,5 @@ module.exports = {
     new FaviconsWebpackPlugin({
       logo: path.resolve(__dirname, 'src/public/images/logo.png'),
     }),
-    new CleanWebpackPlugin(),
   ],
 };

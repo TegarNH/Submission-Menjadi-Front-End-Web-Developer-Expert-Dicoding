@@ -1,0 +1,51 @@
+.menu-food-list, .menu-drink-list {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+
+  @include media-in(tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include media-in(desktop) {
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include media-in(desktop-large) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .item__menu_restaurant {
+    display: grid;
+    grid-template-columns: auto 2fr;
+    text-align: left;
+    padding: 10px;
+    transition: 0.2s;
+
+    &:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    }
+
+    .picture__item {
+      padding: 8px;
+      width: 80px;
+      height: auto;
+      @include media-in(desktop) {
+        width: 100px;
+      } 
+      @include media-in(desktop-large) {
+        width: 120px;
+      } 
+    }
+
+    .name__item {
+      margin: auto 0 auto 10px;
+      font-size: 14px;
+
+      @include media-in(desktop) {
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.skip-link {
+  position: absolute;
+  display: inline-block;
+  align-content: center;
+  text-decoration: none;
+  top: 70px;
+  left: -180px;
+  padding: 8px;
+  transition: .3s;
+  background-color: var(--primary);
+  color: black;
+  z-index: 1001;
+  
+  &:focus {
+    left: 0;
+  }
+}

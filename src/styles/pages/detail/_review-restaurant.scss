@@ -1,0 +1,53 @@
+.review-list {
+  display: grid;
+  gap: 10px;
+
+  @include media-in(desktop) {
+    gap: 20px;
+  }
+
+  .review-item {
+    font-size: 14px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 2fr;
+    grid-template-areas: 
+      "profile-element name-element"
+      "profile-element date-element"
+      "content-element content-element";
+
+    @include media-in(desktop) {
+      font-size: 16px;
+    }
+
+    .review__profile {
+      grid-area: profile-element;
+      width: 50px;
+      height: auto;
+      margin-right: 20px;
+
+      @include media-in(desktop) {
+        width: 65px;
+      } 
+
+      @include media-in(desktop-large) {
+        width: 75px;
+      }
+    }
+    
+    .review__name {
+      grid-area: name-element;
+      align-self: end;
+    }
+    .review__content {
+      grid-area: content-element;
+      margin-top: 20px;
+
+    }
+    .review__date {
+      grid-area: date-element;
+      align-self: start;
+      margin-top: 5px;
+    }
+  }
+}

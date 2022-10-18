@@ -6,15 +6,17 @@
   color: black;
   background-color: var(--primary);
   transition: 0.3s;
+
   &:hover {
     cursor: pointer;
     background-color: var(--primarySemiDark);
   }
+
   &:active {
     background-color: var(--PrimaryDark);
   }
 
   @include media-in(mobile) {
-  font-size: 18px;
+    font-size: 18px;
   }
 }

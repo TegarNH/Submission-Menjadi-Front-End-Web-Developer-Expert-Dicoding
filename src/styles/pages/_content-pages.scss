@@ -1,0 +1,59 @@
+// Home Page
+@import 'home/hero';
+@import 'home/skip-link';
+
+// Detail Page
+@import 'detail/content-detail';
+@import 'detail/favorite-button';
+@import 'detail/review-restaurant';
+@import 'detail/menu-restaurant';
+
+
+.label_section {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
+
+  @include media-in(tablet) {
+    font-size: 32px;
+  }
+}
+
+.recommendation {
+  margin: 60px auto 0 auto;
+}
+
+.explore, .favorite {
+  margin: 60px auto;
+}
+
+.recommendation-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(400px,1fr);
+  column-gap: 20px;
+  padding: 0 30px 20px 30px;
+  overflow-x: auto;
+}
+
+.explore-container, .favorite-container {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: grid;
+  gap: 20px;
+
+
+  @include media-in(tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  @include media-in(desktop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include media-in(desktop-large) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
