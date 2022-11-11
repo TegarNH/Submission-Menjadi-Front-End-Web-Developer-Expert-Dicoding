@@ -12,7 +12,7 @@ class ItemReviewResto extends HTMLElement {
         <picture>
           <source type="image/webp" srcset="${CONFIG.IMAGE_DEFAULT_PERSON_REVIEW_PATH}.webp">
           <source type="image/png" srcset="${CONFIG.IMAGE_DEFAULT_PERSON_REVIEW_PATH}.png">
-          <img src="${CONFIG.IMAGE_DEFAULT_PERSON_REVIEW_PATH}.png" alt="Profil ${dataReview.name}" class="lazyload review__profile">
+          <img data-src="${CONFIG.IMAGE_DEFAULT_PERSON_REVIEW_PATH}.png" alt="Profil ${dataReview.name}" class="lazyload review__profile">
         </picture>
         <h3 class="review__name">${dataReview.name}</h3>
         <p class="review__content"><i>"${dataReview.review}"</i></p>

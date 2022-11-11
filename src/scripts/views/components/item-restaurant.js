@@ -11,7 +11,7 @@ class ItemRestaurant extends HTMLElement {
     this.innerHTML = `<article class="restaurant-item">
       <img class="lazyload restaurant-item__thumbnail"
           type="image/webp"
-          src="${CONFIG.BASE_IMAGE_URL_SIZE_SMALL + dataRestaurant.pictureId}"
+          data-src="${CONFIG.BASE_IMAGE_URL_SIZE_SMALL + dataRestaurant.pictureId}"
           alt="Restoran ${dataRestaurant.name}">
       <div class="restaurant-item__content">
         <h3 class="restaurant-item__name">${dataRestaurant.name}</h3>

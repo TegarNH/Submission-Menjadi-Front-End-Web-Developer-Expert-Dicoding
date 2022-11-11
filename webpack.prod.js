@@ -2,6 +2,7 @@ const { merge } = require('webpack-merge');
 const TerserPlugin = require('terser-webpack-plugin');
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin');
 const common = require('./webpack.common');
 
@@ -74,5 +75,6 @@ module.exports = merge(common, {
       overrideExtension: true,
     }),
     new CssMinimizerPlugin(),
+    new BundleAnalyzerPlugin(),
   ],
 });
